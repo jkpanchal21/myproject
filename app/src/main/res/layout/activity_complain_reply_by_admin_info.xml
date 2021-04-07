@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/white"
+    tools:context=".ComplainInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#0359A5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_back"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complain Reply Info"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complain Name"
+            android:textSize="20dp"
+            android:textColor="#0359A5"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sarvodaynagar Society"
+            android:textColor="#0359A5"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0359A5"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complain Decsription"
+            android:textSize="20dp"
+            android:textColor="#0359A5"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="169, Sarvodaynagar Society, Sector-30, Gandhinagar. (382030)"
+            android:textColor="#0359A5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0359A5"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

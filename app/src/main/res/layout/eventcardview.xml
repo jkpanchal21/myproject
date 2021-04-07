@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_event"
+                    android:layout_gravity="center"
+                    android:id="@+id/card_event_img"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:id="@+id/card_event_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#0359A5"
+                        android:textAppearance="?attr/textAppearanceHeadline6"/>
+                    <TextView
+                        android:id="@+id/card_event_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Detail Desription,Detail Desription,Detail Desription,Detail Desription,Detail Desription,"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="#0359A5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:gravity="end">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View More"
+                    android:id="@+id/card_event_btn"
+                    android:textSize="12dp"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#0359A5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
